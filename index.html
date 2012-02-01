@@ -1,0 +1,90 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Oberon | Feature List | Demo page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.featureList.js"></script>
+	<script type="text/javascript">
+		$().ready(function() {
+			
+			$('#tabs li a').featureList({
+				output				:	'#output li',
+				player				:  	'#player li',
+				start_item			:	0,   			// start_item is where the active tab starts on page load
+				transition_interval	:	5000			// If '0' no rotation added
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="content">
+
+		<div id="feature_list">
+		
+			<ul id="tabs">
+				<li>
+					<a id="1" href="javascript:;">
+						<img src="images/thumbfpo.png" />
+					</a>
+				</li>
+				<li>
+					<a id="2" href="javascript:;">
+						<img src="images/thumbfpo.png" />
+					</a>
+				</li>
+				<li>
+					<a id="3" href="javascript:;">
+						<img src="images/thumbfpo.png" />
+					</a>
+				</li>
+				<li>
+					<a id="4" href="javascript:;">
+						<img src="images/thumbfpo.png" />
+					</a>
+				</li>
+			</ul>
+				
+			<ul id="output">
+				<li>
+					<a href="#">
+						<img src="images/yellow.png" height="325" width="860"/>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/blue.png" height="325" width="860"/>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/red.png" height="325" width="860"/>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/green.png" height="325" width="860"/>
+					</a>
+				</li>
+				
+			</ul>
+			
+			<ul id="player">
+				<li><img id="backward" src="images/backward.png" title="Back" /></li>
+				<li><img id="pause" src="images/pause.png" title="Pause" /></li>
+				<li><img id="play" class="active" src="images/playActive.png" title="Play" /></li>
+				<li><img id="forward" src="images/forward.png" title="Forward" /></li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>
